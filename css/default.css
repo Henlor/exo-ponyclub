@@ -2,9 +2,6 @@ body{
     font-family: "Arial";
 }
 
-.clearfix{
-    clear:both;
-}
 
 .container{
     margin: auto;
@@ -19,16 +16,19 @@ ul.ponys {
 	min-width: 300px;
 	list-style: none;
 	padding-top: 20px;
+	font-size: 0;
 }
 
 ul.ponys li {
-   float:left;
+	display: inline-block;
+	width: calc(100% / 3);
 }
 
 ul.ponys li figure img{
-    text-align: center;
+	width: 100%;
 } 
 
 ul.ponys li figure figcaption {
     text-align: center;
+	font-size: 16px;
 } 
